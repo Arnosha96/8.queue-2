@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <conio.h>
 #include "Queue2.h"
 
 using namespace std;
@@ -15,12 +15,14 @@ int main()
 	st.Push(1);
 	st.Push(3545);
 
-	
+	cout <<"Количество: "<< st.HowMany()<<endl; 
+
 	try
 	{
 		cout << st.Pop() << endl;
 		cout << st.Pop() << endl;
 		cout << st.Pop() << endl;
+		cout <<"Количество: "<< st.HowMany()<<endl;
 		cout << st.Pop() << endl;
 		cout << st.Pop() << endl;
 		cout << st.Pop() << endl;
@@ -29,5 +31,9 @@ catch (const char*message)
 	{
 		cout << "Error:" << message << endl;
 	}
+
+cout <<"Количество: "<< st.HowMany()<<endl; 
+
+	_getch();
 	return 0;
 }

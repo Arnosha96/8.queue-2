@@ -66,6 +66,10 @@ public:
 			}
 			else throw "Очередь пустая";
 		}
-
+		
+		int HowMany()
+		{
+			return (topIndex);
+		}
 
 	};
